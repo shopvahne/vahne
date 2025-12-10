@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>VAHNE | Luxury Jewelry & Lifestyle</title>
+  <title>VAHNE | Modern Luxury Brand</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <meta name="description" content="VAHNE is a new luxury startup crafting elevated jewelry and lifestyle pieces with a refined, modern aesthetic." />
-  <meta name="robots" content="index,follow" />
+  <!-- Basic SEO -->
+  <meta name="description" content="VAHNE is a modern luxury startup crafting refined jewelry and lifestyle pieces. Launching soon." />
+  <meta name="robots" content="index, follow" />
 
-  <!-- Favicon + icons (files are in the repo root: favicon.png, logo.png) -->
-  <link rel="icon" href="favicon.png" type="image/png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
 
-  <!-- Social preview (update the URL to your real domain when it's live) -->
+  <!-- OPEN GRAPH (THIS CONTROLS LINK PREVIEW IMAGE) -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="VAHNE" />
-  <meta property="og:description" content="A new luxury startup." />
-  <!-- If your GitHub Pages/custom domain is set, change this: -->
-  <meta property="og:url" content="https://vahne.com/" />
-  <meta property="og:image" content="https://vahne.com/logo.png" />
+  <meta property="og:description" content="A new modern luxury brand. Launching soon." />
+  <meta property="og:url" content="https://vahne.com" />
+  <meta property="og:image" content="https://vahne.com/share.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="VAHNE luxury brand logo" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VAHNE" />
+  <meta name="twitter:description" content="A new modern luxury brand. Launching soon." />
+  <meta name="twitter:image" content="https://vahne.com/share.png" />
 
   <meta name="theme-color" content="#ffffff" />
 
@@ -37,8 +45,8 @@
       justify-content: center;
       background: #ffffff;
       color: #000000;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Helvetica Neue", Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
     }
 
     .wrapper {
@@ -48,9 +56,8 @@
 
     .brand-mark {
       width: 80px;
-      max-width: 30vw;
-      display: block;
       margin: 0 auto 1.25rem;
+      display: block;
     }
 
     .logo {
@@ -76,47 +83,6 @@
       opacity: 0.6;
     }
 
-    .status {
-      margin-top: 1.75rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      border: 1px solid rgba(0, 0, 0, 0.16);
-      backdrop-filter: blur(16px);
-      background: rgba(245, 245, 245, 0.9);
-      font-size: 0.75rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      opacity: 0.9;
-      color: #000000;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #000000;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      animation: pulse 1.6s infinite;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      70% {
-        transform: scale(1.7);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1.7);
-        opacity: 0;
-      }
-    }
-
     .footer {
       margin-top: 3rem;
       font-size: 0.7rem;
@@ -126,20 +92,13 @@
     }
   </style>
 </head>
+
 <body>
   <div class="wrapper">
-    <!-- Page image/logo -->
-    <img src="logo.png" alt="VAHNE logo" class="brand-mark" />
-
+    <img src="logo.png" alt="VAHNE luxury brand logo" class="brand-mark" />
     <div class="logo">VAHNE</div>
     <div class="divider"></div>
     <div class="tagline">A New Luxury Startup</div>
-
-    <div class="status">
-      <span class="dot"></span>
-      <span>Coming Soon</span>
-    </div>
-
     <div class="footer">vahne.com</div>
   </div>
 </body>
